@@ -15,7 +15,9 @@ Your cipher should:
 - [x] The mapping should be cyclical in either direction.
 
 Example: Shifting by 1:
-Z maps to 0, 9 maps to A Shifting by -1:
+Z maps to 0, 9 maps to A 
+
+Shifting by -1:
 A maps to 9, 0 maps to Z
 
 3) Create at least two more cyphers for the spy app. Add all Ciphers you create to the CipherFactory and add buttons that allow the user to switch to all implemented ciphers.

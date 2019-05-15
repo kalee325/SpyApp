@@ -10,8 +10,8 @@ Create a new cipher named AlphanumericCesarCipher that implements the Cipher pro
  - The output should only include characters A-Z or 0-9. Lower-case characters should be converted to upper-case before they are encrypted.
  - The mapping should be cyclical in either direction.
    
-   Example: Shifting by 1: Z maps to 0, 9 maps to A 
-            Shifting by -1: A maps to 9, 0 maps to Z
+   Example: - Shifting by 1: Z maps to 0, 9 maps to A 
+            - Shifting by -1: A maps to 9, 0 maps to Z
 
 Create at least two more cyphers for the spy app. Add all Ciphers you create to the CipherFactory and add buttons that allow the user to switch to all implemented ciphers.
  Comment your cipher. What characters are valid input, what is the output of your cipher.

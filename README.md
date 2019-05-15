@@ -6,9 +6,9 @@ SpyApp is an IOS App contains with 4 differents encode and decode functions.
 
 1) Extend the Cipher protocol to include a decrypt method.
 - [x] The decrypt method should take in an encrypted string and a secret and should return a plaintext string.
-- [x] Once you update the Cipher protocol you will have to update the CesarCipher with a decrypt method.
+- [x] Once you update the Cipher protocol you will have to update the CaesarCipher with a decrypt method.
 
-2) Create a new cipher named AlphanumericCesarCipher that implements the Cipher protocol. Add the cipher to the CipherFactory.
+2) Create a new cipher named AlphanumericCaesarCipher that implements the Cipher protocol. Add the cipher to the CipherFactory.
 Your cipher should:
 - [x] Only take alphanumeric input. (characters A-Z, a-z and numbers 0-9)
 - [x] The output should only include characters A-Z or 0-9. Lower-case characters should be converted to upper-case before they are encrypted. 

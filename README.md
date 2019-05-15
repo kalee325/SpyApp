@@ -25,11 +25,12 @@ Your cipher should:
 - [x] The decrypt method should reverse what the encrypt method does.
 
 Two extra ciphers:
-ReversedCaesarCipher: 
-A reverse version of the original CaesarCipher
 
-BinaryCipher:
-It encodes an input text into binary value and decodes a binary value into a text
+      ReversedCaesarCipher: 
+      A reverse version of the original CaesarCipher
+
+      BinaryCipher:
+      It encodes an input text into binary value and decodes a binary value into a text
 
 4) Create layout constraints for all new buttons.
 - [x] Make sure your app looks good on devices with different resolutions and in both

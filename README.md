@@ -1,6 +1,6 @@
 # SpyApp
 
-SpyApp is an IOS App contains with 4 differents encode and decode functions.
+SpyApp is an IOS App contains 4 different encode and decode functions.
 
 
 

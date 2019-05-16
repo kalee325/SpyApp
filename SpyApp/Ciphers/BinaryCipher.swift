@@ -16,17 +16,15 @@ struct BinaryCipher: CipherProtocol {
         var encode = plaintext
         let binaryData = Data(encode.utf8) //convert String to Data
         
-        //convert Data to binary in String
+        //convert Data to binary(8 bits with leading 0) in String
         encode = (binaryData.reduce("") { (acc, byte) -> String in
-            acc + "0" + String(byte, radix: 2)
+            acc + String(byte, radix: 2).pad(with: "0", toLength: 8)
         })
         
-        //fixed binary value for whitespace
-        encode = encode.replacingOccurrences(of: "0100000", with: "00100000")
         
         //insert whitespace for every 8 bits
         encode = String(encode.enumerated().map { $0 > 0 && $0 % 8 == 0 ? [" ", $1] : [$1]}.joined())
-
+        
         //print(encode)
 
         return encode
@@ -54,5 +52,14 @@ struct BinaryCipher: CipherProtocol {
 
         return decode
     }
-    
+}
+
+//extension for padding binary value to 8 bits
+extension String {
+    public func pad(with padding: Character, toLength length: Int) -> String {
+        let paddingWidth = length - self.count
+        guard 0 < paddingWidth else { return self }
+        
+        return String(repeating: padding, count: paddingWidth) + self
+    }
 }
